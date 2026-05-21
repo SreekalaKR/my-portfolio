@@ -49,11 +49,28 @@ function About() {
     </p>
 
     <p className="text-gray-400 text-sm">
-      Chennai, Tamilnadu, India
+      ZeroNorth | Tamilnadu, India
     </p>
 
     <p className="text-gray-500 text-sm">
-      Oct 2023 – Feb 2026
+      Nov 2023 – Feb 2026
+    </p>
+
+    <p className="text-gray-400 mt-3 text-sm">
+      Employment Type: Permanent
+    </p>
+  </div>
+   <div className="border-l-2 border-blue-500 pl-4">
+    <p className="text-white font-medium">
+      Software Engineer Intern
+    </p>
+
+    <p className="text-gray-400 text-sm">
+      Alpha Ori India Private Limited | Tamilnadu, India
+    </p>
+
+    <p className="text-gray-500 text-sm">
+      April 2023 – Oct 2023
     </p>
 
     <p className="text-gray-400 mt-3 text-sm">
@@ -75,7 +92,7 @@ function About() {
               </p>
 
               <p className="text-gray-400">
-                APJ Abdul Kalam Technological University, Kerala
+                Mar Athanasius College of Engineering, Kothamangalam | Kerala, India 
               </p>
 
               <p className="text-sm text-gray-500">
@@ -94,7 +111,7 @@ function About() {
               </p>
 
               <p className="text-gray-400">
-                State Board of Technical Education, Kerala
+                Govt.Polytechnic College, Kothamangalam | Kerala, India
               </p>
 
               <p className="text-sm text-gray-500">
