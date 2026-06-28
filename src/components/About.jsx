@@ -8,120 +8,158 @@ function About() {
         About Me
       </h2>
 
-      <div className="mt-12 grid md:grid-cols-2 gap-10 items-start">
+      <div className="mt-12 grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
 
-        {/* LEFT SIDE - ABOUT */}
-        <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
-          <h3 className="text-xl font-semibold mb-4">
+        {/* LEFT SIDE */}
+        <div className="bg-gray-900 border border-gray-800 p-6 rounded-2xl shadow-lg hover:border-blue-500 transition md:sticky md:top-28">
+          <h3 className="text-xl font-semibold mb-5">
             Who I Am
           </h3>
 
           <p className="text-gray-400 leading-relaxed">
-            I am a Software Engineer with close to 3 years of experience in building scalable and high-performance web applications.
+            I am a Software Engineer with nearly 3 years of experience in
+            designing and developing scalable, high-performance web
+            applications using modern frontend and backend technologies.
           </p>
 
-          <p className="text-gray-400 mt-4 leading-relaxed">
-            I specialize in developing clean, maintainable, and user-focused applications with strong expertise in both frontend and backend development.
+          <p className="text-gray-400 mt-5 leading-relaxed">
+            My expertise includes Angular, React, Node.js, TypeScript,
+            RESTful APIs, cloud technologies, and microservices architecture.
+            I enjoy building clean, maintainable, and user-centric
+            applications that solve real-world business problems.
           </p>
 
-          <p className="text-gray-400 mt-4 leading-relaxed">
-            I enjoy solving real-world problems and continuously improving application performance, architecture, and user experience.
+          <p className="text-gray-400 mt-5 leading-relaxed">
+            I am passionate about writing quality code, improving application
+            performance, and continuously learning new technologies to build
+            better software.
           </p>
 
-          <p className="text-gray-400 mt-6 leading-relaxed">
-            I am actively seeking opportunities to apply my skills in impactful projects and contribute to real-world applications while growing as a developer.
+          <p className="text-gray-400 mt-5 leading-relaxed">
+            Currently, I am seeking opportunities where I can contribute to
+            impactful projects, collaborate with talented teams, and continue
+            growing as a Full Stack Software Engineer.
           </p>
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="space-y-6">
+        <div className="space-y-8">
 
           {/* EXPERIENCE */}
-          {/* EXPERIENCE */}
-<div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
-  <h3 className="text-xl font-semibold mb-6">
-    Experience
-  </h3>
+          <div className="bg-gray-900 border border-gray-800 p-6 rounded-2xl shadow-lg hover:border-blue-500 transition">
+            <h3 className="text-xl font-semibold mb-6">
+              Experience
+            </h3>
 
-  <div className="border-l-2 border-blue-500 pl-4">
-    <p className="text-white font-medium">
-      Software Engineer L1
-    </p>
+            {/* Experience 1 */}
+            <div className="border-l-2 border-blue-500 pl-5 pb-8">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                <h4 className="text-lg font-semibold text-white">
+                  Software Engineer
+                </h4>
 
-    <p className="text-gray-400 text-sm">
-      ZeroNorth | Tamilnadu, India
-    </p>
+                <span className="text-sm text-gray-500">
+                  November 2023 – February 2026
+                </span>
+              </div>
 
-    <p className="text-gray-500 text-sm">
-      Nov 2023 – Feb 2026
-    </p>
+              <p className="mt-1">
+                <span className="text-blue-400 font-medium">
+                  ZeroNorth
+                </span>
+                <span className="text-gray-500 text-sm ml-1">
+                  (formerly Alpha Ori India Pvt Ltd)
+                </span>
+              </p>
 
-    <p className="text-gray-400 mt-3 text-sm">
-      Employment Type: Permanent
-    </p>
-  </div>
-   <div className="border-l-2 border-blue-500 pl-4">
-    <p className="text-white font-medium">
-      Software Engineer Intern
-    </p>
+              <p className="text-gray-400 text-sm mt-1">
+                Chennai, Tamil Nadu, India
+              </p>
+            </div>
 
-    <p className="text-gray-400 text-sm">
-      Alpha Ori India Private Limited | Tamilnadu, India
-    </p>
+            {/* Experience 2 */}
+            <div className="border-l-2 border-blue-500 pl-5">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                <h4 className="text-lg font-semibold text-white">
+                  Software Engineer Intern
+                </h4>
 
-    <p className="text-gray-500 text-sm">
-      April 2023 – Oct 2023
-    </p>
+                <span className="text-sm text-gray-500">
+                  April 2023 – October 2023
+                </span>
+              </div>
 
-    <p className="text-gray-400 mt-3 text-sm">
-      Employment Type: Permanent
-    </p>
-  </div>
-</div>
+              <p className="mt-1">
+                <span className="text-blue-400 font-medium">
+                  ZeroNorth
+                </span>
+                <span className="text-gray-500 text-sm ml-1">
+                  (formerly Alpha Ori India Pvt Ltd)
+                </span>
+              </p>
+
+              <p className="text-gray-400 text-sm mt-1">
+                Chennai, Tamil Nadu, India
+              </p>
+            </div>
+          </div>
 
           {/* EDUCATION */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
+          <div className="bg-gray-900 border border-gray-800 p-6 rounded-2xl shadow-lg hover:border-blue-500 transition">
             <h3 className="text-xl font-semibold mb-6">
               Education
             </h3>
 
-            {/* ITEM 1 */}
-            <div className="border-l-2 border-blue-500 pl-4 mb-6">
-              <p className="text-white font-medium">
-                B.Tech in Computer Science and Engineering
+            {/* B.Tech */}
+            <div className="border-l-2 border-blue-500 pl-5 pb-8">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                <h4 className="text-lg font-semibold text-white">
+                  B.Tech in Computer Science & Engineering
+                </h4>
+
+                <span className="text-sm text-gray-500">
+                  2020 – 2023
+                </span>
+              </div>
+
+              <p className="text-blue-400 font-medium mt-1">
+                Mar Athanasius College of Engineering
               </p>
 
-              <p className="text-gray-400">
-                Mar Athanasius College of Engineering, Kothamangalam | Kerala, India 
+              <p className="text-gray-400 text-sm mt-1">
+                Kothamangalam, Kerala, India
               </p>
 
-              <p className="text-sm text-gray-500">
-                2020 - 2023
-              </p>
-
-              <span className="inline-block mt-2 px-3 py-1 text-sm bg-blue-600 rounded-full">
-                CGPA : 8.25
+              <span className="inline-flex items-center mt-3 px-4 py-1.5 text-sm font-medium bg-blue-600 rounded-full text-white">
+                Percentage: 80%
               </span>
             </div>
 
-            {/* ITEM 2 */}
-            <div className="border-l-2 border-blue-500 pl-4">
-              <p className="text-white font-medium">
-                Diploma in Computer Engineering
+            {/* Diploma */}
+            <div className="border-l-2 border-blue-500 pl-5">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                <h4 className="text-lg font-semibold text-white">
+                  Diploma in Computer Engineering
+                </h4>
+
+                <span className="text-sm text-gray-500">
+                  2017 – 2020
+                </span>
+              </div>
+
+              <p className="text-blue-400 font-medium mt-1">
+                Government Polytechnic College
               </p>
 
-              <p className="text-gray-400">
-                Govt.Polytechnic College, Kothamangalam | Kerala, India
+              <p className="text-gray-400 text-sm mt-1">
+                Kothamangalam, Kerala, India
               </p>
 
-              <p className="text-sm text-gray-500">
-                2017 - 2020
-              </p>
-
-              <span className="inline-block mt-2 px-3 py-1 text-sm bg-blue-600 rounded-full">
-                CGPA : 9.7
+              <span className="inline-flex items-center mt-3 px-4 py-1.5 text-sm font-medium bg-blue-600 rounded-full text-white">
+                Percentage: 97%
               </span>
             </div>
+
           </div>
 
         </div>

@@ -61,7 +61,7 @@ function Contact() {
           {/* SOCIAL ICONS */}
           <div className="flex gap-6 text-2xl mt-4">
             <a
-              href="https://github.com/SreekalaKR"
+              href="https://github.com/SreekalaKR/SreekalaKR"
               target="_blank"
               rel="noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-blue-600 transition"

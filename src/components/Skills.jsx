@@ -6,7 +6,10 @@ import {
   FaCloud,
   FaLock,
   FaCogs,
-  FaRobot
+  FaRobot,
+  FaTools,
+  FaUsers,
+  FaLayerGroup,
 } from "react-icons/fa";
 
 function Skills() {
@@ -14,42 +17,122 @@ function Skills() {
     {
       title: "Programming Languages",
       icon: <FaCode />,
-      items: "JavaScript, TypeScript, SQL, Python",
+      items: ["JavaScript (ES6+)", "TypeScript", "Python", "SQL"],
     },
     {
       title: "Frontend Development",
       icon: <FaLaptopCode />,
-      items: "Angular, React, Next.js, HTML, CSS, Tailwind CSS",
+      items: [
+        "Angular (14+)",
+        "React",
+        "RxJS",
+        "NgRx",
+        "Redux",
+        "HTML5",
+        "CSS3",
+        "SCSS",
+        "Bootstrap",
+        "Tailwind CSS",
+      ],
     },
     {
       title: "Backend Development",
       icon: <FaServer />,
-      items: "Node.js, Express.js, NestJS",
+      items: [
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "Asynchronous & Event-Driven Systems",
+      ],
     },
     {
-      title: "Databases",
+      title: "Databases & Storage",
       icon: <FaDatabase />,
-      items: "MySQL, PostgreSQL, MongoDB, Redis",
+      items: [
+        "Cassandra (DataStax Astra)",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "Redis",
+      ],
     },
     {
-      title: "Cloud & Dev Tools",
+      title: "ORMs & ODMs",
+      icon: <FaLayerGroup />,
+      items: ["Sequelize", "Mongoose"],
+    },
+    {
+      title: "Cloud & AWS Services",
       icon: <FaCloud />,
-      items: "AWS (Basics), Git, GitHub, Postman, Figma",
+      items: [
+        "AWS S3",
+        "DynamoDB",
+        "Amazon CloudWatch",
+        "AWS SQS",
+        "AWS Lambda",
+      ],
     },
     {
-      title: "Security & Auth",
+      title: "Authentication & Authorization",
       icon: <FaLock />,
-      items: "JWT, OAuth, RBAC, Authentication & Authorization",
-    },
-     {
-       title: "AI Tools",
-       icon: <FaRobot />,
-      items: "ChatGPT, Copilot, Gemini, Claude",
+      items: [
+        "Auth0",
+        "JWT",
+        "Single Sign-On (SSO)",
+        "Role-Based Access Control (RBAC)",
+      ],
     },
     {
-      title: "Engineering Practices",
+      title: "Architecture & Development Practices",
       icon: <FaCogs />,
-      items: "REST APIs, Microservices, Performance Optimization, Agile Development",
+      items: [
+        "Microservices Architecture",
+        "Object-Oriented Design (OOP)",
+        "Data Structures & Algorithms",
+        "Performance Optimization",
+        "Agile/Scrum",
+        "Code Reviews",
+        "Unit Testing (Jasmine, Karma)",
+        "Debugging",
+        "Cross-Browser Testing",
+      ],
+    },
+    {
+      title: "Tools & Platforms",
+      icon: <FaTools />,
+      items: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "VS Code",
+        "Chrome DevTools",
+        "Jira",
+        "Linear",
+        "Figma",
+      ],
+    },
+    {
+      title: "AI-Assisted Development Tools",
+      icon: <FaRobot />,
+      items: [
+        "ChatGPT",
+        "GitHub Copilot",
+        "Cursor AI",
+        "Claude",
+        "Gemini",
+      ],
+    },
+    {
+      title: "Soft Skills",
+      icon: <FaUsers />,
+      items: [
+        "Problem Solving",
+        "Adaptability",
+        "Learning Mindset",
+        "Ownership",
+        "Communication",
+      ],
     },
   ];
 
@@ -58,37 +141,42 @@ function Skills() {
       id="skills"
       className="min-h-screen px-6 md:px-16 py-20 pt-24"
     >
-      <h2 className="text-3xl font-bold text-center">
-        Skills
-      </h2>
+      <h2 className="text-3xl font-bold text-center">Skills</h2>
 
       <p className="text-gray-400 text-center mt-2">
-        Technologies and engineering practices I use to design and build scalable web applications
+        Technologies, cloud services, AI tools, and engineering practices I use
+        to build scalable, high-performance web applications.
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-gray-900 p-6 rounded-2xl shadow-lg border border-gray-800 
-                       hover:border-blue-500 hover:-translate-y-2 transition duration-300 group"
+            className="bg-gray-900 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 hover:-translate-y-2 transition duration-300 group h-full flex flex-col"
           >
-            {/* ICON */}
+            {/* Icon */}
             <div className="mb-4 w-10 h-10 flex items-center justify-center">
               <div className="text-blue-500 text-2xl group-hover:scale-110 transition">
                 {skill.icon}
               </div>
             </div>
 
-            {/* TITLE */}
-            <h3 className="text-lg font-semibold">
+            {/* Title */}
+            <h3 className="text-lg font-semibold mb-4">
               {skill.title}
             </h3>
 
-            {/* CONTENT */}
-            <p className="text-gray-400 text-sm mt-2 leading-relaxed">
-              {skill.items}
-            </p>
+            {/* Skill Badges */}
+            <div className="flex flex-wrap gap-2">
+              {skill.items.map((item, idx) => (
+                <span
+                  key={idx}
+                  className="px-3 py-1 text-sm rounded-full bg-gray-800 text-gray-300 border border-gray-700 hover:border-blue-500 hover:text-white transition"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
