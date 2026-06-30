@@ -16,6 +16,14 @@ function Projects() {
       github: "https://github.com/SreekalaKR/recipe-app",
       live: "https://flavora.onrender.com",
     },
+     {
+      title: "ResuAI",
+      desc: "An AI-powered resume analyzer that evaluates ATS compatibility, identifies key skills, and provides personalized suggestions to improve your resume.",
+      tech: "Angular,Node.js,Express.js",
+      img: "https://media.istockphoto.com/id/1090964702/vector/employer-businessman-exploring-job-applications.webp?a=1&b=1&s=612x612&w=0&k=20&c=icHSEx0wS-1QWIjWgWayeyNqmizqp7qaQPNMNKhZOiY=",
+      github: "https://github.com/SreekalaKR/ai-resume-analyzer.git",
+      live: "https://github.com/SreekalaKR/ai-resume-analyzer.git",
+    },
     {
       title: "E-Pick",
       desc: "Voice Assistant that enables hands-free interaction with the system using speech recognition and text-to-speech capabilities.",
